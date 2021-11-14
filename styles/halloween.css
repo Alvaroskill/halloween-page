@@ -1,0 +1,82 @@
+/***** hoja de estilo para la presentación de halloween *****/
+/***** IMPORTANTE: no es responsive *****/
+
+@font-face {
+    font-family: halloween;
+    src: url("../fonts/shloprg.ttf");
+}
+
+
+body {background-color: black;}
+
+#container {width: 5000px;/*ancho de la imagen*/
+            height: 2290px;/* alto de la imagen */
+            margin: auto;
+            background-image: url("../images/halloween2.jfif");;
+            font-size: 3em;
+            font-family: halloween;
+            color: white;
+            position: relative;}/*el container se mueve */
+#p1 {position: absolute;/* fijado dentro de su contenedor */
+     top: 50px ; /* coordenada vertical*/
+     left: 200px;/* coordenada horizontal */
+     text-shadow: 5px 5px 5px red;}
+
+#p2 {position: absolute;
+     top: 2000px  ;
+     left: 3600px;
+     text-shadow: 5px 5px 5px red;}
+
+#ghostt {position: absolute;
+     top:900px;
+     left: 2500px;
+     text-shadow: 5px 5px 5px red;}
+
+#batt {position: absolute;
+       top: 900px;
+       left: 500px;
+       text-shadow: 5px 5px 5px red;}
+
+#calabaza {position: absolute;
+           width: 1500px;
+           height: 1000px;
+           top: 950px  ;
+           left: 3400px;
+           }
+
+#calabaza2{position: absolute;
+          top: 950px;
+          left: 3400px;
+          width: 1500px;
+          height: 1000px;
+          
+          
+          visibility: hidden;/* la calabaza de entrada no se ve */
+        }
+
+#ghost1 {position: absolute;
+         top: 900px ;
+         left: 2500px;
+         width: 500px ;
+         height: 500px;
+     }
+
+#ghost {position: absolute;
+        top: 900px;
+        left: 2500px ;
+        width: 500px;
+        height: 500px ;
+        visibility: hidden;}
+
+#bat1 {position: absolute;
+       top: 600px;
+       left: 200px;
+       width: 500px;
+       height: 500px;}
+
+#bat {position: absolute;
+      top: 600px;
+      left: 200px;
+      width: 500px;
+      height: 500px;
+      visibility: hidden;}

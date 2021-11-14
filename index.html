@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween party</title>
+    <link rel="stylesheet" href="./styles/halloween.css">
+    <script src="./javascript/halloween.js"></script>
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+
+<audio id="Demonio">
+    <source src="./sounds/ReverseSurrealWhisperQuickSounds.com.mp3" type="audio/mpeg">
+</audio>    
+
+<audio id="Alarido">    
+    <source src="./sounds/sfx-horror7.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="Monster">    
+    <source src="./sounds/monster-scream-sound-effect.mp3" type="audio/mpeg">
+</audio>
+    
+    <!--ATENCIÓN este ejercicio es no responsive-->
+    <div id="container">
+    <h1 id="p1">Scary Halloween Party</h1>
+
+    <!-- efecto aparecer calabaza y sonar chirrido-->
+    <p id="p2">Don't touch the pumpking</p>
+    <div id="calabaza" onmouseover="mostrar('calabaza2');sonar ('Demonio')"
+                       onmouseout= "ocultar ('calabaza2')"></div><!--creo un div vacío-->
+    <p id="ghostt">Don't close the fence</p>
+    <div id="ghost1" onmouseover="mostrar('ghost');sonar('Alarido')"
+                     onmouseout="ocultar('ghost')"></div>
+    
+    <p id="batt">Don't see in the tree</p>
+    <div id="bat1" onmouseover="mostrar('bat');sonar('Monster')"
+                    onmouseout="ocultar('bat');parar('Monster')"></div>
+    
+    <img id="calabaza2" src="./images/pumpking.gif">
+    <img id="ghost"     src="./images/ghost.gif">
+    <img id="bat"       src="./images/bat.gif"
+    </div>
+    
+</body>
+</html>
